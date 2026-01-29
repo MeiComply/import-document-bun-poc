@@ -1,0 +1,22 @@
+{
+  "name": "import-document-service",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.975.0",
+    "@aws-sdk/lib-storage": "^3.975.0",
+    "busboy": "^1.6.0",
+    "dotenv": "^17.2.3",
+    "hono": "^4.11.7",
+    "mongoose": "^9.1.5",
+    "ulid": "^3.0.2",
+    "uuid": "^13.0.0",
+    "xlsx": "^0.18.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/busboy": "^1.5.4"
+  }
+}

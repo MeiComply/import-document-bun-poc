@@ -1,0 +1,16 @@
+apiVersion: apisix.apache.org/v2
+kind: ApisixRoute
+metadata:
+  name: dev-import-documents-test-bun-route
+  namespace: api6-dev
+spec:
+  http:
+    - name: import-doc-test-bun
+      match:
+        hosts:
+          - dev.gets.complyance.io
+        paths:
+          - /bun/*
+      backends:
+        - serviceName: import-document-service-test-bun-svc
+          servicePort: 3000
