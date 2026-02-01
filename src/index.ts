@@ -19,4 +19,3 @@ Bun.serve({
   port: 3000,
   fetch: app.fetch,
 })
-export default app
